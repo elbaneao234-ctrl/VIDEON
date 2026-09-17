@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos | VIDEON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo" href="index.html">VIDEON</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" aria-current="page">Catálogos</a>
+            <a href="index.html#sobre">Sobre nosotros</a>
+        </nav>
+    </header>
+
+    <main class="catalog-page">
+        <section class="catalog-header">
+            <a class="back-link" href="catalogo.html">← Volver a catálogos</a>
+            <p class="hero-subtitle" id="category-label">COLECCIÓN</p>
+            <h1 id="category-title">Vídeos</h1>
+            <p class="hero-description" id="category-description">Elige un vídeo para reproducirlo.</p>
+        </section>
+
+        <section class="videos-section" aria-labelledby="videos-title">
+            <div class="section-header">
+                <p>SELECCIÓN</p>
+                <h2 id="videos-title">Vídeos del catálogo</h2>
+            </div>
+
+            <div class="video-grid" id="video-grid"></div>
+        </section>
+    </main>
+
+    <div class="video-modal" id="video-modal" aria-hidden="true">
+        <div class="video-modal-content" role="dialog" aria-modal="true" aria-label="Reproductor de vídeo">
+            <button class="close-modal" type="button" aria-label="Cerrar vídeo">×</button>
+            <video id="video-player" controls></video>
+            <iframe id="video-frame" title="Reproductor de vídeo externo" allow="autoplay; fullscreen" allowfullscreen hidden></iframe>
+            <p id="video-error" class="video-error">No se ha encontrado este vídeo. Añade el archivo en la carpeta videos.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 VIDEON</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
